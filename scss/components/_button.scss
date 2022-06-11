@@ -1,0 +1,151 @@
+//* Button portfolio//
+.btn-portfolio{
+
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+}
+
+.btn{
+margin-right: 8px;  
+}
+    
+.btn-item{
+color: var(--main-font);
+background-color:#F5F4FA;
+
+font-family: 'Roboto';
+font-weight: 500;
+font-size: 16px;
+    
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+cursor: pointer;
+    
+border-radius: 4px;
+padding: 6px 22px;
+transition-duration: 250ms;
+    
+     &:hover,
+     &:focus{
+     color: #FFFFFF;
+     background-color: var(--active-color);
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+     transition-duration: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     }
+}
+    
+
+//button hover//
+ .hover-btn{
+ color: #FFFFFF;
+ background-color: var(--active-color);
+ border-color: #2196F3;
+    
+ font-family: 'Roboto';
+ font-weight: 700;
+ font-size: 16px;
+    
+ line-height: 1.87;  
+ text-align: center;
+ letter-spacing: 0.06em;
+ cursor: pointer;
+    
+ align-items: center;
+ border-radius: 4px;
+ padding: 10px 32px;  
+ }
+
+ //button modal-window//
+ .modal-btn{
+ position: absolute;
+     
+ right: 8px;
+ top: 8px;
+     
+ border-radius: 50px;
+ border: 1px solid rgba(0, 0, 0, 0.1);
+     
+ width: 30px;
+ height: 30px;
+     
+ fill: #212121;
+ background-color: #FFFFFF;
+     
+ display: flex;
+ justify-content: center;
+ align-items: center;
+     
+ cursor: pointer;
+     
+      &:hover,
+      &:focus{
+     fill: #2196F3;
+     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }   
+ }
+
+ //button modal submit//
+ .btn-submit{
+ width: 200px;
+ height: 50px;
+     
+ color: #FFFFFF;
+ background-color: #2196F3;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+ border-radius: 4px;
+ border-color: #2196F3;
+     
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 1.88;
+ letter-spacing: 0.06em;
+     
+ align-items: center;
+ text-align: center;
+
+ }
+
+ //button footer// 
+ .button-footer{
+ width: 200px;
+ height: 50px;
+     
+ margin-left: 12px;
+ background-color: #2196F3;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+ border-radius: 4px;
+ border-color: #2196F3;
+ outline: transparent;
+
+ position: relative;
+     
+ }
+     
+ .footer-submit{
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 1.88;
+     
+ align-items: center;
+ text-align: center;
+ letter-spacing: 0.06em;
+     
+ color: #FFFFFF;
+     
+ margin-right: 29px;
+     
+ }
+     
+ .icon-plain{
+ position: absolute;
+     
+ right: 0;
+ top: 0;
+     
+ transform: translateY(50%);
+ margin-right: 26px;
+  }
+     
