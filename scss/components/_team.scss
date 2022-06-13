@@ -24,8 +24,16 @@
 
 
  .team-container{
+display: block;
+color: #FFFFFF;
+@media screen and (min-width:768px) {
  display: flex;
- color: #FFFFFF;
+ flex-wrap: wrap;
+}
+
+@media screen and (min-width:1200px) {
+    display: flex;
+}
  }
 
  .icon-list{
