@@ -908,54 +908,60 @@ h1, h2, h3, h4, p, ul {
 .our-team {
   padding-top: 30px;
   padding-bottom: 30px;
-  background-color: #FFFFFF;
+  background-color: white;
 }
 
 .list-clients {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media screen and (min-width: 768px) {
   .list-clients {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 94px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .list-clients {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     margin-bottom: 94px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
 }
 
 .clients {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  color: black;
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    font-size: 36px;
+    line-height: 1.16;
+    margin-top: 94px;
+    margin-bottom: 50px;
+  }
 }
 
 .company {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.company:last-child {
-  margin-right: 0;
+@media screen and (min-width: 1200px) {
+  .company:last-child {
+    margin-right: 0;
+  }
 }
 
 .company-link {
