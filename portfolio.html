@@ -45,10 +45,19 @@
             <li class="btn"> <button class="btn-item" type="button">Маркетинг</button></li>
         </ul>
         <ul class="portfolio-img">
-            <li class="item-portfolio">
-               <a class="gallery" href="" target="_blank">
-                  <div class="gallery-box">
-                <img src="./image/portfolio/img-9.jpg" alt="Фото команды" width="370" height="294" />  
+          <li class="item-portfolio">
+           <a class="gallery" href="" target="_blank">
+             <div class="gallery-box">
+              <picture>
+                <!--изображение для десктопа-->
+                 <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio1_lg.jpg 1x , .\pictures\portfolio\portfolio1_lg@2x.jpg 2x" type="image/jpg">
+                <!-- изображение для планшетов-->
+                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio1_md.jpg 1x , .\pictures\portfolio\portfolio1_md@2x.jpg 2x" type="image/jpg">
+                <!--изображение для телефона-->
+                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio1_sm.jpg 1x , .\pictures\portfolio\portfolio1_sm@2x.jpg 2x" type="image/jpg">
+                <img class="team-img" src="./pictures/portfolio/portfolio1_sm.jpg" alt="Технохряк" width="418" height="360" loading="lazy" />
+                </picture>
+                 
                 <div class="gallery-text">
                    <p>Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
                 </div>
