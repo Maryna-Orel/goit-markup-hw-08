@@ -1,0 +1,96 @@
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 480px;
+    height: 796px;
+    z-index: 999;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.mobile-menu__item {
+    margin: 32px 0;
+    transition: 250ms ease;
+
+   
+   
+}
+
+.mobile-menu__link-studio, .mobile-menu__link-portfolio {
+    color: var(--accent-color);
+    
+}
+.mobile-menu__link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    margin-top: 32px;
+    color: black;
+    text-decoration: none;
+
+}
+.mobile-menu__contacts {
+    margin-top: auto;
+    
+    
+}
+
+.mobile-menu__socials {
+   
+    display: flex;
+   
+    
+}
+
+.mobile-menu__socials .mobile-menu__socials-item:not(:last-child) {
+    padding: 0 10px;
+    border-right: 1px solid rgba(33,33,33,0.2);
+ 
+}
+
+.mobile-menu__socials .mobile-menu__socials-item:last-child {
+    padding-left: 10px;
+}
+.mobile-menu__contact-link-tel{
+text-decoration: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+}
+
+.mobile-menu__contact-link-email{
+text-decoration: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 1.16;
+letter-spacing: 0.02em;
+
+color: #757575;
+
+}
+
+.mobile-menu__socials-link{
+text-decoration: none;
+font-family: 'Roboto';   
+font-size: 18px;
+line-height: 1.22;
+
+letter-spacing: 0.02em;
+
+color: #2196F3;
+
+}
