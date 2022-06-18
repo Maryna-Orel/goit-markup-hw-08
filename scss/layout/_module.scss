@@ -208,11 +208,18 @@
  color: #FFFFFF;
     
  margin-bottom: 20px;
+ text-align: center;
+
+ @media screen and (width:1200px) {
+    margin-bottom: 0;
+    text-align: start;
+ }
  }
         
- .form-mail {
-width: 100%;
-text-align: center;
-
- }
-    
+.form-mail{
+    @media screen and (min-width:1200px){
+        width: 100%;
+        margin-left: auto;
+    }
+} 
+ 

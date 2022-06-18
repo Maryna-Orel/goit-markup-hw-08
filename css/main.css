@@ -76,7 +76,7 @@ h1, h2, h3, h4, p, ul {
 @media screen and (min-width: 1200px) {
   .head-nav {
     width: 1200px;
-    margin-left: 215px;
+    margin-left: auto;
   }
 }
 
@@ -488,11 +488,21 @@ h1, h2, h3, h4, p, ul {
   text-transform: uppercase;
   color: #FFFFFF;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.form-mail {
-  width: 100%;
-  text-align: center;
+@media screen and (width: 1200px) {
+  .mail {
+    margin-bottom: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form-mail {
+    width: 100%;
+    margin-left: auto;
+  }
 }
 
 .hover-section {
@@ -1210,6 +1220,9 @@ h1, h2, h3, h4, p, ul {
             flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     width: 1200px;
   }
 }
@@ -1299,6 +1312,8 @@ h1, h2, h3, h4, p, ul {
 @media screen and (min-width: 1200px) {
   .footer-input {
     max-width: 358px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
