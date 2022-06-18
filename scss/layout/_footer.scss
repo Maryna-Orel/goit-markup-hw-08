@@ -1,10 +1,20 @@
  .address{
 
 text-align: center;
-   display: inline-block;
-   margin-right: 70px;
+display: inline-block;
+
+margin-bottom: 60px;
+
+@media screen and (min-width:768px) {
+
+   width: 231px;
+   margin-right: 165px;
    margin-bottom: 0;
-   
+}
+  @media screen and (min-width:1200px){
+   text-align: start;
+   margin-right: 70px;
+  }
  }
 
  .footer {
@@ -25,6 +35,10 @@ text-align: center;
 
  margin-bottom: 9px;
 
+ @media screen and (min-width:768px) {
+ display: flex;
+}
+  
 }
 
  .join{
@@ -89,10 +103,12 @@ align-items: center;
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
+width: 768px;
 }
 @media screen and(min-width: 1200px){
    flex-direction:row;
    flex-wrap: nowrap;
+   width: 1200px;
   
  }
 
@@ -139,14 +155,25 @@ flex-wrap: wrap;
  letter-spacing: 0.03em;
 
  color: rgba(255, 255, 255, 0.6);
+
+ @media screen and (min-width:768px){
+   margin-left: 152px;
+   margin-right: 152px;
  }
 
- .footer-desctop{
-   display: flex;
-    flex-direction: row;
-    align-content: center;
-    justify-content: space-around;
-    align-items: baseline;
-    margin-bottom: 60px;
+
 
  }
+.footer-desktop{
+
+   @media screen and (min-width:768px){
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-around;
+      align-items: baseline;
+      margin-bottom: 60px; 
+   }
+  
+}
+
