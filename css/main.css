@@ -73,6 +73,13 @@ h1, h2, h3, h4, p, ul {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .head-nav {
+    width: 1200px;
+    margin-left: 215px;
+  }
+}
+
 .header {
   border-bottom: 1px solid #ECECEC;
 }
