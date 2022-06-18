@@ -1,8 +1,9 @@
  .address{
+
+text-align: center;
    display: inline-block;
-   margin-bottom: 9px;
-   text-align: center;
-   margin-bottom: 60px;
+   margin-right: 70px;
+   margin-bottom: 0;
    
  }
 
@@ -10,7 +11,6 @@
  background-color:#2F303A;
  padding-bottom: 60px;
  padding-top: 60px;
-
 
 }
 
@@ -24,9 +24,8 @@
  line-height: 1.71;
 
  margin-bottom: 9px;
+
 }
-
-
 
  .join{
 
@@ -142,4 +141,12 @@ flex-wrap: wrap;
  color: rgba(255, 255, 255, 0.6);
  }
 
+ .footer-desctop{
+   display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-bottom: 60px;
 
+ }
