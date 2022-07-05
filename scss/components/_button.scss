@@ -136,6 +136,15 @@
       outline: transparent;
      
       position: relative;
+      
+      @media screen and (min-width:480px) {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+          
+      }
 
           
       }
@@ -152,6 +161,8 @@
       color: #FFFFFF;
           
       margin-right: 29px;
+ 
+
           
       }
           

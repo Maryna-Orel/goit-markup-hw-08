@@ -1,34 +1,102 @@
 .hover-section{
-background-color: #2F303A;
-text-align: center;
 
-padding-top: 200px;
-padding-bottom: 200px;
+    background-color: #2F303A;
+    text-align: center;
+    
+    padding-top: 118px;
+    padding-bottom: 118px;
+    
+    
+    max-width: 1600px;
+    width: 100%;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-image:linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(/pictures/hover/hover_lg.jpg),
+        url(/pictures/hover/hover_lg@2x.jpg);
 
-max-width: 1600px;
-height: 600px;
-margin-left: auto;
-margin-right: auto;
-background-position: center;
-background-image:linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)
+    @media screen and (min-width: 480px) {
+        background-color: #2F303A;
+        text-align: center;
+        background-image: linear-gradient( 
+         rgba(47,48,58,0.4),
+         rgba(47,48,58,0.4)
+        ),
+        url(/pictures/hover/hover_sm.jpg),
+        url(/pictures/hover/hover_sm@2x.jpg);
+       
+        height: 100%;
+        width: 100%;
+  
+    background-size: cover;
+ 
+   
+}
+
+@media screen and (min-width: 768px) {
+    background-color: #2F303A;
+    text-align: center;
+    background-image: linear-gradient( 
+     rgba(47,48,58,0.4),
+     rgba(47,48,58,0.4)
     ),
-    url(../image/hover/hover.jpg);
+    url(/pictures/hover/hover_md.jpg),
+    url(/pictures/hover/hover_md@2x.jpg);
+   
+    height: 100%;
+   
+}
+
 }
 
 .hover{
-color:#FFFFFF ;
+    color:#FFFFFF ;
 
+    font-family: 'Roboto'; 
+    font-weight: 900;
+    
+    letter-spacing: 0.06em;
+    text-transform: uppercase; 
+    
+    margin-bottom: 30px;
+    text-align: center;
+   
+
+    
+@media screen and (min-width:480px) {
+    width: 360px;
+    height: 84px;
+  
+color: #FFFFFF;
+font-size: 26px;
+line-height:1.62;
+text-align: center;
+margin-right: 60px;
+margin-left: 60px;
 font-family: 'Roboto'; 
 font-weight: 900;
-font-size: 44px;
-
-line-height: 1.36; 
-letter-spacing: 0.06em;
 text-transform: uppercase; 
+}
 
-margin-bottom: 30px;
- }
+@media screen and (min-width:768px) {
+    margin-left:204px ;
+    
+    color: #FFFFFF;
+    font-family: 'Roboto'; 
+    font-weight: 900;
+    text-transform: uppercase; 
+    
+}
+@media screen and (min-width:1200px){
+font-size: 44px;
+    line-height: 1.36; 
+   
+}
 
+}

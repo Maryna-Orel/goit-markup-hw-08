@@ -4,8 +4,16 @@
         
  .footer-input{
  width: 100%;
- max-width: 450px;
+
  height: 50px;
+ 
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 1.71;
+
+ letter-spacing: 0.03em;
+
+ color: rgba(255, 255, 255, 0.6);
     
  background-color: #2F303A;
     
@@ -14,6 +22,17 @@
  border-radius: 4px;
  
  padding-left: 16px;
+
+ @media screen and (min-width:480px){
+   max-width: 450px;
+ }
+ 
+ @media screen and (min-width:768px){
+   margin-left: 152px;
+   margin-right: 152px;
+ }
+
+ 
 
  @media screen and (min-width:1200px){
     max-width: 358px;
