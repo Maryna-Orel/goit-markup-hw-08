@@ -35,7 +35,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 480px) {
+@i {
   .container {
     width: 480px;
   }
@@ -1283,16 +1283,10 @@ h1, h2, h3, h4, p, ul {
 }
 @media screen and (min-width: 768px) {
   .footerr {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 768px;
+    /*display: flex;
+       flex-direction: column;
+       flex-wrap: wrap;
+    width: 768px;*/
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1364,6 +1358,9 @@ h1, h2, h3, h4, p, ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 

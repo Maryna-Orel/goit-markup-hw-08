@@ -99,17 +99,17 @@
     max-width: 100%;
     height: auto;
 
-    @media screen and (max-width: 767px){
+    @include mobile{
         width: 450px;
         height: 294px;
     }
 
-    @media screen and (min-width: 768px){
+    @include tablet{
         width: 354px;
         height: 294px;
     }
 
-    @media screen and (min-width: 1200px){
+    @include desctop{
         width: 370px;
         height: 294px;
         

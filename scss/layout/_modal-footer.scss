@@ -23,17 +23,17 @@
  
  padding-left: 16px;
 
- @media screen and (min-width:480px){
+ @include mobile{
    max-width: 450px;
  }
  
- @media screen and (min-width:768px){
+ @include tablet{
    margin-left: auto;
  }
 
  
 
- @media screen and (min-width:1200px){
+ @include desctop{
     max-width: 358px;
     margin-left: 0;
     margin-right: 0;

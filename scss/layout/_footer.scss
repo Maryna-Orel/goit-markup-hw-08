@@ -5,11 +5,8 @@ display: inline-block;
 
 margin-bottom: 60px;
 
-@media screen and (min-width:768px) {
 
-  
-}
-  @media screen and (min-width:1200px){
+@include desctop{
    text-align: start;
    margin-right: 70px;
   }
@@ -33,7 +30,7 @@ margin-bottom: 60px;
 
  margin-bottom: 9px;
 
- @media screen and (min-width:768px) {
+ @include tablet {
  display: flex;
 }
   
@@ -41,7 +38,7 @@ margin-bottom: 60px;
 
  .join{
 
-   @media screen and (min-width: 480px) {
+   @include mobile {
       text-align: center;
    
       margin-bottom: 20px;
@@ -56,7 +53,7 @@ margin-bottom: 60px;
       
    }
       
-      @media screen and (min-width:1200px) {
+   @include desctop {
       font-weight: 700;
       font-size: 14px;
      
@@ -75,11 +72,11 @@ margin-bottom: 60px;
       
 display: flex;
 
- @media screen and (max-width: 767px) {
+@include mobile {
     margin-bottom: 60px;
     display: flex;
 }
-@media screen and (min-width: 768px) {
+@include tablet {
    margin-bottom: 60px;
   
 }
@@ -90,17 +87,19 @@ display: flex;
 flex-direction: column;
 align-items: center;
 
- @media screen and (min-width: 480px) {
+@include mobile {
     width: 480px;
+   
 }
 
-@media screen and (min-width: 768px) {
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-width: 768px;
+@include tablet {
+   /*display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+width: 768px;*/
+
 }
-@media screen and(min-width: 1200px){
+@include desctop{
    flex-direction:row;
    flex-wrap: nowrap;
    align-items: baseline;
@@ -148,7 +147,7 @@ width: 768px;
 
 .footer-desktop{
 
-   @media screen and (min-width:768px){
+   @include tablet{
       display: flex;
       flex-direction: row;
       align-content: center;
@@ -160,8 +159,12 @@ width: 768px;
 }
 
 .footer-tablet{
-   @media screen and (min-width:768px) {
+   @include mobile{
+  
+   }
+   @include tablet {
       display: flex;
+      justify-content: space-between;
 
    }
   

@@ -11,19 +11,19 @@
     padding-inline-start: 0;
     
    
-    @media screen and (min-width: 480px) {
-      width: 450px;
+  @include mobile {
+   
     
     }
-    @media screen and (min-width: 768px) {
-      width: 738px;
+   @include tablet {
+
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       margin-left: 15px;
       margin-right: 15px;
     }
-    @media screen and (min-width: 1200px) {
+   @include desctop {
    
       flex-wrap: nowrap;
     
@@ -37,12 +37,12 @@
     margin-bottom: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
-    @media screen and (min-width: 768px) {
-      width: 354px;
+    @include tablet {
+     width: 354px;
       height: 120px;
     }
-    @media screen and (min-width: 1200px) {
-      width: 270px;
+    @include desctop {
+     width: 270px;
       height: 120px;
     }
   }
@@ -61,11 +61,11 @@ letter-spacing: 0.03em;
 color: #757575;
 margin-bottom: 30px;
 
-     @media screen and (min-width: 768px) {
+    @include tablet {
        flex-basis: calc((100% - 3 * 30px) / 2);
        margin-right: 30px;
      }
-     @media screen and (min-width: 1200px) {
+     @include desctop {
        margin-right: 30px;
        flex-basis: calc((100% - 3 * 30px) / 4);
      }
@@ -87,7 +87,7 @@ margin-bottom: 30px;
     letter-spacing: 0.03em;
     
 
-    @media screen and (min-width:768px){
+    @include tablet{
       text-align: left;
     }
   

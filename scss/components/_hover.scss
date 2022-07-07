@@ -21,7 +21,7 @@
         url(/pictures/hover/hover_lg.jpg),
         url(/pictures/hover/hover_lg@2x.jpg);
 
-    @media screen and (min-width: 480px) {
+   @include mobile {
         background-color: #2F303A;
         text-align: center;
         background-image: linear-gradient( 
@@ -39,7 +39,7 @@
    
 }
 
-@media screen and (min-width: 768px) {
+@include tablet {
     background-color: #2F303A;
     text-align: center;
     background-image: linear-gradient( 
@@ -69,8 +69,8 @@
    
 
     
-@media screen and (min-width:480px) {
-    width: 360px;
+@include mobile {
+   width: 360px;
     height: 84px;
   
 color: #FFFFFF;
@@ -84,7 +84,7 @@ font-weight: 900;
 text-transform: uppercase; 
 }
 
-@media screen and (min-width:768px) {
+@include tablet {
     margin-left:204px ;
     
     color: #FFFFFF;
@@ -93,7 +93,7 @@ text-transform: uppercase;
     text-transform: uppercase; 
     
 }
-@media screen and (min-width:1200px){
+@include desctop{
 font-size: 44px;
     line-height: 1.36; 
    
