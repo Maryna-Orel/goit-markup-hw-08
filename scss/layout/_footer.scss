@@ -7,9 +7,7 @@ margin-bottom: 60px;
 
 @media screen and (min-width:768px) {
 
-   width: 231px;
-
-   margin-bottom: 0;
+  
 }
   @media screen and (min-width:1200px){
    text-align: start;
@@ -161,3 +159,11 @@ width: 768px;
   
 }
 
+.footer-tablet{
+   @media screen and (min-width:768px) {
+      display: flex;
+
+   }
+  
+  
+}

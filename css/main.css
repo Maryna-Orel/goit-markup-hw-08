@@ -752,6 +752,7 @@ h1, h2, h3, h4, p, ul {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin-left: 125px;
   }
 }
 
@@ -1012,6 +1013,11 @@ h1, h2, h3, h4, p, ul {
     width: 354px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .our-team {
+    width: 270px;
+  }
+}
 
 .site-icon {
   display: -webkit-box;
@@ -1069,6 +1075,19 @@ h1, h2, h3, h4, p, ul {
     margin-right: 0;
     margin-left: 0;
   }
+  .team-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-item {
+    width: 270px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+  .team-item:last-child {
+    margin-right: 0;
+  }
 }
 
 .team-img {
@@ -1081,58 +1100,23 @@ h1, h2, h3, h4, p, ul {
     height: 374px;
   }
 }
-
-/*
-
-.section-team{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    margin-bottom: 50px;
-    }
-
-
-
-
-@media screen and (min-width:1200px) {
-    display: flex;
-
+@media screen and (min-width: 1200px) {
+  .team-img {
+    width: 270px;
+    height: 260px;
+  }
 }
- }
 
- .icon-list{
- margin-right: 10px;
+@media screen and (min-width: 768px) {
+  .asd {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
 
-     &:last-child{
-        margin-right: 0;
-     }
- }
-
-
-
-
-
-
-
-
-
- .team-img{
-    @media screen and (min-width:480px){
-        width: 450px;
-        height: 460px;
-    }
-    @media screen and (min-width:768px){
-        width: 354px;
-        height:374px;
-    }
-    @media screen and (min-width:1200px){
-        width: 270px;
-        height: 260px;
-        display: flex;
-        margin-right: 0;
-    }
- } */
 .list-clients {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1206,12 +1190,6 @@ h1, h2, h3, h4, p, ul {
   text-align: center;
   display: inline-block;
   margin-bottom: 60px;
-}
-@media screen and (min-width: 768px) {
-  .address {
-    width: 231px;
-    margin-bottom: 0;
-  }
 }
 @media screen and (min-width: 1200px) {
   .address {
@@ -1381,12 +1359,20 @@ h1, h2, h3, h4, p, ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .footer-group {
   position: relative;
 }
 
 .footer-input {
-  width: 100%;
+  width: 450px;
   height: 50px;
   font-weight: 400;
   font-size: 14px;
