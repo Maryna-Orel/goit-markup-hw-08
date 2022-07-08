@@ -20,7 +20,7 @@ margin-bottom: 60px;
 }
 
  .footer-address{
- color: #FFFFFF;
+ color: white;
 
  font-family: 'Roboto';
  font-size: 14px;
@@ -42,7 +42,7 @@ margin-bottom: 60px;
       text-align: center;
    
       margin-bottom: 20px;
-      color: #FFFFFF;
+      color: white;
       display: block;
       font-weight: 700;
       font-size: 14px;
@@ -159,9 +159,14 @@ width: 768px;*/
 }
 
 .footer-tablet{
-   @include mobile{
-  
-   }
+
+  margin-left: 124px;
+  margin-left: 124px;
+  background-color: aqua;
+
+
+
+
    @include tablet {
       display: flex;
       justify-content: space-between;
