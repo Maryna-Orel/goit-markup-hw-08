@@ -1,5 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <!--Шапка-->
+
+  <body>
+    <header class="header">
+      <div class="container head-nav">
+        <a href="./index.html" class="header-link" lang="en">Web<span class="logo">Studio</span> </a>
+        <nav class="header-conteiner">
+          <ul class="link-group">
+            <li><a class="link-item current" href="./index.html">Студия</a></li>
+            <li><a class="link-item" href="./portfolio.html">Портфолио</a></li>
+            <li><a class="link-item" href="">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <ul class="nav">
+          <li>
+            <a class="link-nav" href="mailto:info@devstudio.com"><svg class="link-icon" width="16" height="12">
+                <use href="./image/sprite.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li>
+            <a class="link-nav" href="tel.+380961111111"><svg class="link-icon" width="10" height="16">
+                <use href="./image/sprite.svg#icon-phone"></use>
+              </svg>+38 096 111 11 11</a>
+          </li>
+        </ul>
+        <button type="button" class="menu-open-btn">
+          <svg class="mobile-menu__svg" width="40" height="40">
+            <use href="./image/sprite.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden">
+        <div class="mob-menu-container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn">
+              <svg class="icon-menu-close" width="40" height="40">
+                <use href="./images/symbol-defs.svg#"></use>
+              </svg>
+            </button>
+            <ul class="mob-menu-list">
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-list-link current" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-list-link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="mob-menu-list-item">
+                <a class="mob-menu-list-link" href="./contacts.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-menu__links">
+              <li class="mob-menu-item">
+                <a class="mob-menu__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              </li>
+              <li class="mob-menu-item">
+                <a class="mob-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+              </li>
+            </ul>
+            <ul class="mob-menu-social">
+              <li class="mob-menu-social__item">
+                <a class="menu-social-link" href="#">Instagram</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="menu-social-link" href="#">Twitter</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="menu-social-link" href="#">Facebook</a>
+              </li>
+              <li class="mob-menu-social__item">
+                <a class="menu-social-link" href="#">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Секция портфолио-->
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <!--Скрытый заголовок-->
+          <ul class="btn-portfolio">
+            <li class="btn"><button class="btn-item" type="button">Все</button></li>
+            <li class="btn"><button class="btn-item" type="button">Веб-сайты</button></li>
+            <li class="btn"><button class="btn-item" type="button">Приложения</button></li>
+            <li class="btn"><button class="btn-item" type="button">Дизайн</button></li>
+            <li class="btn"><button class="btn-item" type="button">Маркетинг</button></li>
+          </ul>
+          <ul class="portfolio-img">
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio1_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio1_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio1_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio1_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio1_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio1_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio1_sm.jpg" alt="Технохряк" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Технохряк</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio2_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio2_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio2_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio2_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio2_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio2_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio2_sm.jpg" alt="Постер Орлеан" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio3_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio3_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio3_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio3_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio3_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio3_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio3_sm.jpg" alt="Рыбный ресторан" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Ресторан Seafood</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio4_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio4_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio4_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio4_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio4_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio4_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio4_sm.jpg" alt="Проэкт Прайм" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Проект Prime</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio5_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio5_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio5_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio5_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio5_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio5_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio5_sm.jpg" alt="Проэкт Boxes" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Проект Boxes</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio6_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio6_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio6_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio6_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio6_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio6_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio6_sm.jpg" alt="Монитор" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Inspiration has no Borders</h2>
+                  <p class="portfolio-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio7_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio7_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio7_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio7_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio7_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio7_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio7_sm.jpg" alt="Журнал" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Издание Limited Edition</h2>
+                  <p class="portfolio-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio8_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio8_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio8_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio8_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio8_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio8_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio8_sm.jpg" alt="Бирка" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Проект LAB</h2>
+                  <p class="portfolio-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="item-portfolio">
+              <a class="gallery" href="" target="_blank">
+                <div class="gallery-box">
+                  <picture>
+                    <!--изображение для десктопа-->
+                    <source media="(min-width: 1200px)" srcset="
+                                                ./pictures/portfolio/portfolio9_lg.jpg    1x,
+                                                ./pictures/portfolio/portfolio9_lg@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!-- изображение для планшетов-->
+                    <source media="(min-width: 768px)" srcset="
+                                                ./pictures/portfolio/portfolio9_md.jpg    1x,
+                                                ./pictures/portfolio/portfolio9_md@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <!--изображение для телефона-->
+                    <source media="(max-width: 767px)" srcset="
+                                                ./pictures/portfolio/portfolio9_sm.jpg    1x,
+                                                ./pictures/portfolio/portfolio9_sm@2x.jpg 2x
+                                            " type="image/jpg" />
+                    <img class="overlay-foto" src="./pictures/portfolio/portfolio9_sm.jpg" alt="Ноутбук" width="450" height="294" loading="lazy" />
+                  </picture>
+
+                  <div class="gallery-text">
+                    <p>
+                      Ресурс предлагает комплексные предложения с разным уровнем функционала и
+                      сервисов. Все это позволит посетителю получить исчерпывающие сведения о
+                      компании или частном лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="portfolio-box">
+                  <h2 class="portfolio">Growing Business</h2>
+                  <p class="portfolio-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+
+    <footer class="footer">
+      <div class="container footer">
+        <div class="footer-tablet">
+          <div class="address">
+            <a class="footer-link" href="" lang="en">Web<span class="footer-logo">Studio</span></a>
+            <address class="footer-address">г. Киев, пр-т Леси Украинки, 26 <br /></address>
+
+            <address>
+              <a class="address-link" href="mailto:info@example.com">info@example.com </a>
+              <a class="address-link" href="tel:+38099111111">+38 099 111 11 11 </a>
+            </address>
+          </div>
+          <div class="footer-icon">
+            <p class="join">ПРИСОЕДИНЯЙТЕСЬ</p>
+            <ul class="footer-list">
+              <li class="link-footer">
+                <a class="footer-item" href="" target="_blank" rel="noopener noreferree" aria-label="Иконка инстаграм"><svg class="icon-footer" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-instagram-2"></use>
+                  </svg></a>
+              </li>
+
+              <li class="link-footer">
+                <a class="footer-item" href="" target="_blank" rel="noopener noreferree" aria-label="Иконка твиттер"><svg class="icon-footer" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-twitter-1"></use>
+                  </svg></a>
+              </li>
+
+              <li class="link-footer">
+                <a class="footer-item" href="" target="_blank" rel="noopener noreferree" aria-label="Иконка фейсбук"><svg class="icon-footer" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-facebook-1"></use>
+                  </svg></a>
+              </li>
+
+              <li class="link-footer">
+                <a class="footer-item" href="" target="_blank" rel="noopener noreferree" aria-label="Иконка Линкедин"><svg class="icon-footer" width="20" height="20">
+                    <use href="./image/sprite.svg#icon-linkedin-1"></use>
+                  </svg></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="form-mail">
+          <p class="mail">Подпишитесь на рассылку</p>
+          <form>
+            <label class="footer-group">
+              <input class="footer-input" type="text" name="mail" placeholder="E-mail" />
+            </label>
+            <button class="button-footer" type="submit">
+              <span class="footer-submit">Подписаться</span>
+              <svg class="icon-plain" width="24" height="24">
+                <use href="./image/sprite.svg#icon-icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js" integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA==" crossorigin="anonymous"></script>
+
+    <!--Modal menu-->
+    <script src="./js/modal.js"></script>
+    <!--Mobile menu-->
+    <script src="./js/menu.js"></script>
+  </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +603,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
-<!--Шапка-->
-<body>
+<!-Шапка-->
+<!--<body>
 <header class="header"> 
      <div class="container head-nav">
      <nav class="header-conteiner">
@@ -33,11 +625,11 @@
 </div>
  </header>
  <main>
- <!--Секция портфолио--> 
- <section class="section">
+ <!-Секция портфолио--> 
+ <!--<section class="section">
  <div class="container">
     <h1 class="visually-hidden">Портфолио</h1> <!--Скрытый заголовок-->
-       <ul class="btn-portfolio">
+       <!--<ul class="btn-portfolio">
          <li class="btn"> <button class="btn-item" type="button">Все</button></li>
          <li class="btn"> <button class="btn-item" type="button">Веб-сайты</button></li>
          <li class="btn"> <button class="btn-item" type="button">Приложения</button></li>
@@ -49,12 +641,12 @@
           <a class="gallery" href="" target="_blank">
            <div class="gallery-box">
              <picture>
-             <!--изображение для десктопа-->
-             <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio1_lg.jpg 1x , .\pictures\portfolio\portfolio1_lg@2x.jpg 2x" type="image/jpg">
-             <!-- изображение для планшетов-->
-             <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio1_md.jpg 1x , .\pictures\portfolio\portfolio1_md@2x.jpg 2x" type="image/jpg">
-             <!--изображение для телефона-->
-             <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio1_sm.jpg 1x , .\pictures\portfolio\portfolio1_sm@2x.jpg 2x" type="image/jpg">
+             <!-изображение для десктопа-->
+             <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio1_lg.jpg 1x , .\pictures\portfolio\portfolio1_lg@2x.jpg 2x" type="image/jpg">
+             <!- изображение для планшетов-->
+             <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio1_md.jpg 1x , .\pictures\portfolio\portfolio1_md@2x.jpg 2x" type="image/jpg">
+             <!-изображение для телефона-->
+             <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio1_sm.jpg 1x , .\pictures\portfolio\portfolio1_sm@2x.jpg 2x" type="image/jpg">
              <img class="overlay-foto" src="./pictures/portfolio/portfolio1_sm.jpg" alt="Технохряк" width="450" height="294" loading="lazy" />
              </picture>
                  
@@ -71,12 +663,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio2_lg.jpg 1x , .\pictures\portfolio\portfolio2_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio2_md.jpg 1x , .\pictures\portfolio\portfolio2_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio2_sm.jpg 1x , .\pictures\portfolio\portfolio2_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+                <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio2_lg.jpg 1x , .\pictures\portfolio\portfolio2_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+                <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio2_md.jpg 1x , .\pictures\portfolio\portfolio2_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+               <!---- <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio2_sm.jpg 1x , .\pictures\portfolio\portfolio2_sm@2x.jpg 2x" type="image/jpg">
                 <img class="overlay-foto" src="./pictures/portfolio/portfolio2_sm.jpg" alt="Постер Орлеан" width="450" height="294" loading="lazy" />
                 </picture>
 
@@ -93,12 +685,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio3_lg.jpg 1x , .\pictures\portfolio\portfolio3_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio3_md.jpg 1x , .\pictures\portfolio\portfolio3_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio3_sm.jpg 1x , .\pictures\portfolio\portfolio3_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+                <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio3_lg.jpg 1x , .\pictures\portfolio\portfolio3_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+                <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio3_md.jpg 1x , .\pictures\portfolio\portfolio3_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+                <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio3_sm.jpg 1x , .\pictures\portfolio\portfolio3_sm@2x.jpg 2x" type="image/jpg">
                       <img class="overlay-foto" src="./pictures/portfolio/portfolio3_sm.jpg" alt="Рыбный ресторан" width="450" height="294" loading="lazy" />
                       </picture>    
               
@@ -115,12 +707,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                  <!--изображение для десктопа-->
-                  <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio4_lg.jpg 1x , .\pictures\portfolio\portfolio4_lg@2x.jpg 2x" type="image/jpg">
-                  <!-- изображение для планшетов-->
-                  <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio4_md.jpg 1x , .\pictures\portfolio\portfolio4_md@2x.jpg 2x" type="image/jpg">
-                  <!--изображение для телефона-->
-                  <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio4_sm.jpg 1x , .\pictures\portfolio\portfolio4_sm@2x.jpg 2x" type="image/jpg">
+                  <!-изображение для десктопа-->
+                  <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio4_lg.jpg 1x , .\pictures\portfolio\portfolio4_lg@2x.jpg 2x" type="image/jpg">
+                  <!- изображение для планшетов-->
+                  <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio4_md.jpg 1x , .\pictures\portfolio\portfolio4_md@2x.jpg 2x" type="image/jpg">
+                  <!-изображение для телефона-->
+                 <!---- <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio4_sm.jpg 1x , .\pictures\portfolio\portfolio4_sm@2x.jpg 2x" type="image/jpg">
                       <img class="overlay-foto" src="./pictures/portfolio/portfolio4_sm.jpg" alt="Проэкт Прайм" width="450" height="294" loading="lazy" />
                      </picture>       
                
@@ -137,12 +729,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio5_lg.jpg 1x , .\pictures\portfolio\portfolio5_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio5_md.jpg 1x , .\pictures\portfolio\portfolio5_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio5_sm.jpg 1x , .\pictures\portfolio\portfolio5_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+               <!---- <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio5_lg.jpg 1x , .\pictures\portfolio\portfolio5_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+                <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio5_md.jpg 1x , .\pictures\portfolio\portfolio5_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+                <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio5_sm.jpg 1x , .\pictures\portfolio\portfolio5_sm@2x.jpg 2x" type="image/jpg">
                   <img class="overlay-foto" src="./pictures/portfolio/portfolio5_sm.jpg" alt="Проэкт Boxes" width="450" height="294" loading="lazy" />
                        </picture>      
               
@@ -159,12 +751,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                   <!--изображение для десктопа-->
-                   <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio6_lg.jpg 1x , .\pictures\portfolio\portfolio6_lg@2x.jpg 2x" type="image/jpg">
-                   <!-- изображение для планшетов-->
-                   <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio6_md.jpg 1x , .\pictures\portfolio\portfolio6_md@2x.jpg 2x" type="image/jpg">
-                   <!--изображение для телефона-->
-                   <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio6_sm.jpg 1x , .\pictures\portfolio\portfolio6_sm@2x.jpg 2x" type="image/jpg">
+                   <!-изображение для десктопа-->
+                   <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio6_lg.jpg 1x , .\pictures\portfolio\portfolio6_lg@2x.jpg 2x" type="image/jpg">
+                   <!- изображение для планшетов-->
+                   <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio6_md.jpg 1x , .\pictures\portfolio\portfolio6_md@2x.jpg 2x" type="image/jpg">
+                   <!-изображение для телефона-->
+                   <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio6_sm.jpg 1x , .\pictures\portfolio\portfolio6_sm@2x.jpg 2x" type="image/jpg">
                    <img class="overlay-foto" src="./pictures/portfolio/portfolio6_sm.jpg" alt="Монитор" width="450" height="294" loading="lazy" />
                       </picture>   
                
@@ -181,12 +773,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                      <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio7_lg.jpg 1x , .\pictures\portfolio\portfolio7_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio7_md.jpg 1x , .\pictures\portfolio\portfolio7_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio7_sm.jpg 1x , .\pictures\portfolio\portfolio7_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+                <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio7_lg.jpg 1x , .\pictures\portfolio\portfolio7_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+               <!--- <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio7_md.jpg 1x , .\pictures\portfolio\portfolio7_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+                <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio7_sm.jpg 1x , .\pictures\portfolio\portfolio7_sm@2x.jpg 2x" type="image/jpg">
                 <img class="overlay-foto" src="./pictures/portfolio/portfolio7_sm.jpg" alt="Журнал" width="450" height="294" loading="lazy" />
                    </picture>      
                       
@@ -203,12 +795,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                    <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio8_lg.jpg 1x , .\pictures\portfolio\portfolio8_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio8_md.jpg 1x , .\pictures\portfolio\portfolio8_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio8_sm.jpg 1x , .\pictures\portfolio\portfolio8_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+                <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio8_lg.jpg 1x , .\pictures\portfolio\portfolio8_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+                <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio8_md.jpg 1x , .\pictures\portfolio\portfolio8_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+                <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio8_sm.jpg 1x , .\pictures\portfolio\portfolio8_sm@2x.jpg 2x" type="image/jpg">
                 <img class="overlay-foto" src="./pictures/portfolio/portfolio8_sm.jpg" alt="Бирка" width="450" height="294" loading="lazy" />
                    </picture>     
                
@@ -225,12 +817,12 @@
                <a class="gallery" href="" target="_blank">
                   <div class="gallery-box">
                 <picture>
-                <!--изображение для десктопа-->
-                <source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio9_lg.jpg 1x , .\pictures\portfolio\portfolio9_lg@2x.jpg 2x" type="image/jpg">
-                <!-- изображение для планшетов-->
-                <source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio9_md.jpg 1x , .\pictures\portfolio\portfolio9_md@2x.jpg 2x" type="image/jpg">
-                <!--изображение для телефона-->
-                <source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio9_sm.jpg 1x , .\pictures\portfolio\portfolio9_sm@2x.jpg 2x" type="image/jpg">
+                <!-изображение для десктопа-->
+                <!--<source media="(min-width: 1200px)" srcset=".\pictures\portfolio\portfolio9_lg.jpg 1x , .\pictures\portfolio\portfolio9_lg@2x.jpg 2x" type="image/jpg">
+                <!- изображение для планшетов-->
+                <!--<source media="(min-width: 768 px)" srcset=".\pictures\portfolio\portfolio9_md.jpg 1x , .\pictures\portfolio\portfolio9_md@2x.jpg 2x" type="image/jpg">
+                <!-изображение для телефона-->
+               <!--<source media="(max-width: 767 px)" srcset=".\pictures\portfolio\portfolio9_sm.jpg 1x , .\pictures\portfolio\portfolio9_sm@2x.jpg 2x" type="image/jpg">
                 <img class="overlay-foto" src="./pictures/portfolio/portfolio9_sm.jpg" alt="Ноутбук" width="450" height="294" loading="lazy" />
                 </picture>     
              
@@ -248,9 +840,9 @@
     </section>
  </main>
 
- <!--Footer-->
+ <!-Footer-->
 
- <footer class="footer">
+ <!--<footer class="footer">
      <div class="container footerr">
       <div class="footer-desktop">
       <div class="address">
@@ -308,8 +900,8 @@
 ></script>
 <script defer src="js/mobile-menu.js"></script>
 
-<!--Mobile menu-->
-<script src=“./js/modal.js”></script>
+<!-Mobile menu-->
+<!--<script src=“./js/modal.js”></script>
 <script
 defer
 src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
