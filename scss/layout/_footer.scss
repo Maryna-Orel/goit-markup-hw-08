@@ -6,7 +6,7 @@ display: inline-block;
 margin-bottom: 60px;
 
 
-@include desctop{
+@include desktop{
    text-align: start;
    margin-right: 70px;
   }
@@ -53,7 +53,7 @@ margin-bottom: 60px;
       
    }
       
-   @include desctop {
+   @include desktop {
       font-weight: 700;
       font-size: 14px;
      
@@ -99,7 +99,7 @@ align-items: center;
 width: 768px;*/
 
 }
-@include desctop{
+@include desktop{
    flex-direction:row;
    flex-wrap: nowrap;
    align-items: baseline;
@@ -162,8 +162,7 @@ width: 768px;*/
 
   margin-left: 124px;
   margin-left: 124px;
-  background-color: aqua;
-
+background-color: aqua;
 
 
 

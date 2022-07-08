@@ -36,7 +36,7 @@
             width: 354px;
         
         }
-        @include desctop {
+        @include desktop {
             width: 270px;
         
         }
@@ -91,7 +91,7 @@
                }
                }
 
-               @include desctop{
+               @include desktop{
                 width: 270px;
                 margin-right: 30px;
                 margin-bottom: 0px;
@@ -113,7 +113,7 @@
 
                         }
 
-                        @include desctop {
+                        @include desktop {
                         
                             width: 270px;
                             height: 260px;

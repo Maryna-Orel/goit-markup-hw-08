@@ -8,7 +8,7 @@
  margin-bottom: 94px;
           
 }
-@include desctop{
+@include desktop{
  
  margin-bottom: 94px;
  
@@ -29,7 +29,7 @@ color: black;
 
 
 
-@include desctop {
+@include desktop {
     font-size: 36px;
     line-height: 1.16;
 
@@ -45,7 +45,7 @@ color: black;
    
         margin-right: 30px;
         margin-bottom: 30px;
-       @include desctop{
+       @include desktop{
             &:last-child{
                 margin-right: 0;
             }

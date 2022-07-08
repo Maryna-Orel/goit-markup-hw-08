@@ -4,7 +4,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
     
-    @include desctop{
+    @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -31,7 +31,7 @@ margin-right: auto;
     
     width: 768px;
 }
-@include desctop{
+@include desktop{
     width: 1200px;
     
 }

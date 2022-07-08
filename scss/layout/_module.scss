@@ -49,7 +49,7 @@
     }
 
  
-    @include desctop{
+    @include desktop{
     width: 528px;
  
   
@@ -231,14 +231,14 @@
  margin-bottom: 20px;
  text-align: center;
 
- @include desctop {
+ @include desktop {
     margin-bottom: 0;
     text-align: start;
  }
  }
         
 .form-mail{
-    @include desctop{
+    @include desktop{
  
         margin-left: auto;
     }
