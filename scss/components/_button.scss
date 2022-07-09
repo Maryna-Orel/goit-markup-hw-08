@@ -1,25 +1,38 @@
 //* Button portfolio//
 .btn-portfolio{
 
-     display: flex;
-     justify-content: center;
-     margin-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-bottom: 40px;
     
 
      @include tablet{
           display: flex;
           flex-wrap: wrap;
           justify-content: flex-start;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+      margin-left: 79px;
+     }
+
+     @include desktop{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 50px;
      }
      
      }
      
      .btn{
-     margin-right: 8px;  
+    margin-bottom: 15px; 
+    margin-right: 8px; 
     
      @include tablet{
           margin-bottom: 15px;
+     }
+
+     @include desktop{
+          margin-right: 8px;  
      }
 }
          
@@ -126,7 +139,7 @@
       .button-footer{
       width: 200px;
       height: 50px;
-      
+  
       margin-top: 20px;    
       margin-left: 12px;
       background-color: #2196F3;
@@ -142,10 +155,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-left: 125px;
-      
+     margin-left: 140px;
           
       }
+
+   @include tablet{
+     margin-left: 277px;
+     margin-right: 291px ;
+   }
 
           
       }
@@ -177,7 +194,7 @@
       margin-right: 26px;
        }
 /* Кнопка мобильного меню*/
-      /* .menu-button{
+       .menu-button{
           display: flex;
           align-items: center;
           justify-content: center;

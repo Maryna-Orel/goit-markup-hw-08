@@ -1,6 +1,10 @@
 .about-section{
-   @include desktop{
+   @include mobile{
         display: none;
+    }
+
+    @include desktop{
+        display: block;
     }
 }
 .about{

@@ -3,8 +3,23 @@
  }
         
  .footer-input{
- width: 450px;
+  @include mobile{
+    width: 450px;
+   }
 
+   @include tablet{
+    margin-left: 166px;
+   }
+
+   
+ @include desktop{
+  max-width: 358px;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+}
+
+  
  height: 50px;
  
  font-weight: 400;
@@ -23,19 +38,5 @@
  
  padding-left: 16px;
 
- @include mobile{
-   max-width: 450px;
- }
- 
- @include tablet{
-   margin-left: auto;
  }
 
- 
-
- @include desktop{
-    max-width: 358px;
-    margin-left: 0;
-    margin-right: 0;
- }
- }

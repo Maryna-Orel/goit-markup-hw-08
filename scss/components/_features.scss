@@ -11,17 +11,14 @@
     padding-inline-start: 0;
     
    
-  @include mobile {
-   
-    
-    }
+
    @include tablet {
 
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
-      margin-left: 15px;
-      margin-right: 15px;
+    
+    
+
     }
    @include desktop {
    

@@ -121,13 +121,9 @@
                             }
                     }
 
-                 .asd  {
+                 .team-list{
                     @include tablet{
                         display: flex;
                         flex-wrap: wrap;
-                       
-                        
                     }
-                  
-                   
                  }
