@@ -21,7 +21,8 @@
 @include tablet{
     display: flex;
     align-items: center; 
-    padding-bottom: 28px;
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
     }  
@@ -39,7 +40,7 @@
  letter-spacing: 0.02em;
  text-decoration: none;
 
- margin-top: 32px;
+ 
 
  margin-right: 50px;
   
@@ -60,7 +61,7 @@
  content: "";
 
  left: 0px;
- bottom: 0px;
+ bottom: -24px;
 
  display: block;
 

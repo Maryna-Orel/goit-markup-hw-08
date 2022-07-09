@@ -37,6 +37,11 @@
 
 }
 
+.menu-open-btn:hover,
+.menu-open-btn:focus{
+    fill: #2196F3;
+}
+
 .mob-menu{
    
     position: fixed;
@@ -75,11 +80,19 @@
 
    
     position: absolute;
-    top: 10px;
-    right: 15px;
+    top: 20px;
+    right: 20px;
     display: flex;
     padding: 0;
+    border: transparent;
 }
+
+.menu-close-btn:hover,
+.menu-close-btn:focus{
+    fill: #2196F3;
+}
+
+
 
 .mob-menu-list{
    
@@ -99,7 +112,11 @@ letter-spacing: 0.02em;
     text-decoration: none;
     color: #212121;
   
+}
 
+.mob-menu-list-link:hover,
+.mob-menu-list-link:focus{
+    color: #2196F3;
 }
 
 .mob-menu-list-item{
@@ -182,3 +199,6 @@ color: #2196F3;
     
 }
 
+.no-scroll{
+    position: fixed;
+}

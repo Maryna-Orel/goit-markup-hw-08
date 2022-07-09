@@ -174,16 +174,20 @@ margin-right: 100px;
    display: flex;
    justify-content: flex-start;
    align-items: baseline;
+   margin-left: 0;
   
  
   }
 }
 
 .footer-container{
+display: flex;
 
-   @include desktop{
+
+ @include desktop{
       display: flex;
-     flex-wrap: wrap;
+     align-items: baseline;
+    
    }
 }
 
@@ -191,4 +195,15 @@ margin-right: 100px;
    @include desktop{
       margin-left:70px;
    }
+}
+
+.form-f{
+
+
+   @include desktop{
+   display: flex;
+   align-items: flex-start;
+   flex-direction: row;
+
+}
 }

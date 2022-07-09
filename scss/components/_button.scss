@@ -19,6 +19,7 @@
           display: flex;
           justify-content: center;
           margin-bottom: 50px;
+          margin-left: 0;
      }
      
      }
@@ -165,8 +166,9 @@
    }
 
         @include desktop{
-      margin-left: 0;
+      margin-left: 12px;
       margin-right: 0;
+      margin-top: 0;
  
         }  
       }

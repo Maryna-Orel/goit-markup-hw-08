@@ -245,6 +245,7 @@
   
     display:flex;
     justify-content: flex-start;
+ 
   
  }
  }
@@ -255,8 +256,8 @@
         display:block;
     }
     @include desktop{
-        display: block;
-      text-align: start;
+    display: block;
+    text-align: start;
      
     }
 } 
