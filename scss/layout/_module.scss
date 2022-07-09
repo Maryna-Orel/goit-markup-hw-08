@@ -50,7 +50,8 @@
 
  
     @include desktop{
-    width: 528px;
+    max-width: 528px;
+    height:581px ;
  
   
  }
@@ -180,7 +181,12 @@
     font-size: 12px;
     line-height: 1.12;
     
-    
+     }
+     @include desktop{
+        font-size: 14px;
+        
+ line-height: 1.71;
+ letter-spacing: 0.03em;
      }
  }
 
@@ -251,7 +257,8 @@
  }
         
 .form-mail{
-
+display: flex;
+flex-direction: column;
     @include tablet{
         display:block;
     }
