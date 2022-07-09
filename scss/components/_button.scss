@@ -164,7 +164,11 @@
      margin-right: 291px ;
    }
 
-          
+        @include desktop{
+      margin-left: 0;
+      margin-right: 0;
+ 
+        }  
       }
           
       .footer-submit{

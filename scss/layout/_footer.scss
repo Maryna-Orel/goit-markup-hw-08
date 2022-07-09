@@ -8,15 +8,21 @@ margin-bottom: 60px;
 
 @include desktop{
    text-align: start;
-   margin-right: 70px;
+
+   margin-bottom: 0;
   }
  }
 
  .footer {
+ 
  background-color:#2F303A;
  padding-bottom: 60px;
  padding-top: 60px;
-
+ @include desktop{
+   padding-bottom: 60px;
+   padding-top: 60px;
+   text-align: start;
+}
 }
 
  .footer-address{
@@ -64,6 +70,7 @@ margin-bottom: 60px;
       color: #FFFFFF;
      
       margin-bottom: 20px;
+      text-align: start;
      } 
      
  }
@@ -176,6 +183,12 @@ margin-right: 100px;
 
    @include desktop{
       display: flex;
-      align-items: center;
+     flex-wrap: wrap;
+   }
+}
+
+.footer-icon{
+   @include desktop{
+      margin-left:70px;
    }
 }

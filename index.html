@@ -47,13 +47,13 @@
           </svg>
         </button>
       </div>
-
+      <!-- Мобильное меню-->
       <div class="mob-menu is-hidden">
         <div class="mob-menu-container">
           <div class="mob-menu-top">
             <button type="button" class="menu-close-btn">
-              <svg class="icon-menu-close" width="40" height="40">
-                <use href="./images/symbol-defs.svg#"></use>
+              <svg class="icon-menu-close" width="18" height="18">
+                <use href="./image/sprite.svg#icon-close_24px"></use>
               </svg>
             </button>
             <ul class="mob-menu-list">
@@ -70,11 +70,11 @@
           </div>
           <div class="mob-menu-bottom">
             <ul class="mob-menu__links">
-              <li class="mob-menu-item">
-                <a class="mob-menu__link" href="tel:+380961111111"> +38 096 111 11 11</a>
+              <li class="mob-menu-item-tel">
+                <a class="mob-menu__link-tel" href="tel:+380961111111"> +38 096 111 11 11</a>
               </li>
               <li class="mob-menu-item">
-                <a class="mob-menu__link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+                <a class="mob-menu__link-mail" href="mailto:info@devstudio.com"> info@devstudio.com </a>
               </li>
             </ul>
             <ul class="mob-menu-social">
@@ -512,17 +512,19 @@
 
         <div class="form-mail">
           <p class="mail">Подпишитесь на рассылку</p>
-          <form>
-            <label class="footer-group">
-              <input class="footer-input" type="text" name="mail" placeholder="E-mail" />
-            </label>
-            <button class="button-footer" type="submit">
-              <span class="footer-submit">Подписаться</span>
-              <svg class="icon-plain" width="24" height="24">
-                <use href="./image/sprite.svg#icon-icon-send"></use>
-              </svg>
-            </button>
-          </form>
+            <form >
+              <label class="footer-group">
+                <input class="footer-input" type="text" name="mail" placeholder="E-mail" />
+              </label>
+              <button class="button-footer" type="submit">
+                <span class="footer-submit">Подписаться</span>
+                <svg class="icon-plain" width="24" height="24">
+                  <use href="./image/sprite.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </form>
+       
+          
         </div>
       </div>
     </footer>
