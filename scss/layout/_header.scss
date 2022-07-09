@@ -8,14 +8,6 @@
  @include mobile{
  height: 60px;
 }
-
-@include tablet{
-   /* width: 768px;*/
- }
- @include desktop{
-   /* width:1200px;*/
-    margin-left: auto;
- }
  }
 
  .header{
@@ -29,7 +21,7 @@
 @include tablet{
     display: flex;
     align-items: center; 
-    padding-bottom: 0;
+    padding-bottom: 28px;
 }
 
     }  
@@ -48,7 +40,7 @@
  text-decoration: none;
 
  margin-top: 32px;
-margin-bottom: 28px;
+
  margin-right: 50px;
   
  display: block;
