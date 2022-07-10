@@ -5,7 +5,7 @@
    
 @include tablet{
 
- margin-bottom: 94px;
+ margin-bottom: 60px;
           
 }
 @include desktop{
@@ -42,10 +42,16 @@ color: black;
     
 
     .company{
-   
-        margin-right: 30px;
         margin-bottom: 30px;
+        margin-right: 30px;
+
+   @include tablet{
+    margin-bottom: 30px;
+    margin-right: 30px
+   }
        @include desktop{
+        
+        margin-right: 30px;
             &:last-child{
                 margin-right: 0;
             }

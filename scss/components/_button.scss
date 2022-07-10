@@ -150,7 +150,12 @@
       outline: transparent;
      
       position: relative;
-      
+      @media screen and (max-width:479px){
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        margin-left: 50px;
+      }
       @include mobile {
 
       display: flex;

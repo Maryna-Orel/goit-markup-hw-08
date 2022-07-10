@@ -8,6 +8,13 @@
  @include mobile{
  height: 60px;
 }
+
+@include tablet{
+    height: 80px;
+}
+@include desktop{
+    height: 80px;
+}
  }
 
  .header{
@@ -61,7 +68,7 @@
  content: "";
 
  left: 0px;
- bottom: -24px;
+ bottom: -33px;
 
  display: block;
 

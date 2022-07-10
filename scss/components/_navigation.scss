@@ -34,11 +34,16 @@ margin-right: 30px;
  .nav{
 
 
+ @media screen and (max-width:479px){
+    display: none;
+ } 
+    
 
 
 @include mobile {
     display: none;
 }
+
 @include tablet{
    display: block;
     

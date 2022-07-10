@@ -3,9 +3,11 @@
  }
         
  .footer-input{
+
+ 
   @include mobile{
     width: 450px;
-   }
+  }
 
    @include tablet{
     margin-left: 166px;

@@ -257,8 +257,10 @@
  }
         
 .form-mail{
+
 display: flex;
 flex-direction: column;
+
     @include tablet{
         display:block;
     }

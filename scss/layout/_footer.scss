@@ -43,7 +43,20 @@ margin-bottom: 60px;
 }
 
  .join{
-
+@media screen and (max-width:479px){
+   text-align: center;
+   
+      margin-bottom: 20px;
+      color: white;
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+     
+      line-height: 1.14;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      
+}
    @include mobile {
       text-align: center;
    
@@ -78,7 +91,9 @@ margin-bottom: 60px;
  .footer-list{
       
 display: flex;
-
+@media screen and (max-width:479px){
+   margin-bottom: 60px;
+}
 @include mobile {
     margin-bottom: 60px;
     display: flex;
