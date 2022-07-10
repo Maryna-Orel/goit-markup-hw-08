@@ -1151,8 +1151,7 @@ h1, h2, h3, h4, p, ul {
 }
 
 .team-img {
-  width: 450px;
-  height: 460px;
+  width: 100%;
 }
 @media screen and (min-width: 768px) {
   .team-img {
